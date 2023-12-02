@@ -1,0 +1,147 @@
+.projet {
+    position: relative;
+    height: 180px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: rgb(13, 116, 184) 5px 5px 8px, rgb(13, 116, 184) 0px 0px 8px;
+    user-select: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    max-width: 800px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    font-size: 1.5rem;
+    background-color: #241f19;
+    display: flex;
+    flex-direction: column;
+ 
+    p {
+
+        font-size: 1.1rem;
+        flex-grow: 1; 
+    padding:6px;
+    
+    }
+
+    .title {
+        color: white;
+        text-shadow: 5px 5px 3px #aba8a838;
+    }
+
+    .img-projet {
+        border-radius: 2px;
+        position: absolute;
+        width: 120px;
+        height: 210px;
+        transform: rotate(-10deg);
+        margin-left: 50px;
+        top: -20%;
+        right: 50vw;
+        box-shadow: rgb(13, 184, 44) 1px 1px 8px;
+        transition: all 0.3s ease-in-out;
+        animation: 1.5s ease-in-out 1s infinite shadowProjet;
+        z-index: auto;
+        object-fit: cover;
+
+        &:hover {
+            z-index: 5;
+            transform: rotate(0deg) scale(2);
+            box-shadow: none;
+            animation: none;
+
+        }
+    }
+
+    @keyframes shadowProjet {
+        25% {
+            box-shadow: rgba(13, 184, 44) 1px 1px 10px;
+        }
+
+        50% {
+            box-shadow: rgb(13, 184, 44) 1px 1px 12px;
+
+        }
+
+
+        75% {
+            box-shadow: rgb(13, 184, 44) 1px 1px 10px;
+        }
+
+        100% {
+            box-shadow: rgb(13, 184, 44) 1px 1px 8px;
+        }
+
+    }
+
+    .active {
+        right: 30px;
+
+
+    }
+
+}
+
+.projets {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px 0;
+    clip-path: polygon(0 0, 50% 50px, 100% 0, 100% 100%, 0 100%);
+    margin: -40px 0;
+    padding-bottom: 200px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 150px;
+    background-color: rgb(23, 22, 22);
+    margin-top: 50px;
+    padding-bottom: 350px;
+    .active {
+
+        opacity: 1;
+
+    }
+}
+
+.projet-container {
+    padding: 5px;
+    gap: 5px;
+}
+
+.projet-container-icone {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.titre {
+    font-size: 2rem;
+   
+}
+
+.icone {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border-radius: 35%;
+    padding: 1px;
+
+    &:hover {
+
+        animation: rotate 0.3s ease-in-out;
+
+        @keyframes rotate {
+
+            25% {
+                transform: scale(1.1) rotate(25deg);
+            }
+
+            50% {
+                transform: scale(1.1) rotate(-25deg);
+            }
+
+            100% {
+                transform: scale(1.1) rotate(0deg);
+            }
+
+        }
+    }
+}

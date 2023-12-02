@@ -1,0 +1,25 @@
+#projets {
+    padding-top: 50px;
+    color: white;
+    position: relative;
+    z-index: 40;
+
+
+}
+
+.trait {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: white;
+    transform: translateY(-6px);
+}
+
+.titre {
+    gap: 5px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    z-index: 50;
+    text-shadow: 5px 5px 3px #aba8a838;
+}

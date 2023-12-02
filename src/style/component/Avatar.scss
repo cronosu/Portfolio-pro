@@ -1,0 +1,33 @@
+.avatar {
+    position: absolute;
+    right: 10%;
+    height: 300px;
+    top: 20%;
+    border: 8px solid rgb(57, 57, 57);
+    border-radius: 69% 31% 57% 43% / 30% 47% 53% 70%;
+    transition: border-radius 0.3s ease-in;
+    animation: 10s ease-in-out 1s infinite slidein;
+    padding: 5px;
+    &:hover {
+        animation: none;
+        border-radius: 50%;
+
+    }
+}
+
+@keyframes slidein {
+    30% {
+        border-radius: 51% 49% 47% 53% / 42% 36% 64% 58%;
+    }
+
+    66% {
+        border-radius: 42% 38% 62% 38% / 56% 51% 39% 44%;
+
+    }
+
+    100% {
+        border-radius: 69% 31% 57% 43% / 30% 47% 53% 70%;
+
+    }
+
+}

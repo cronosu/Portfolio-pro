@@ -16,7 +16,7 @@ function Projets() {
       <Projet
         title="Kasa"
         alt="Projet Kasa"
-        src="../src/assets/Kasa-min.webp"
+        src="/Kasa-min.webp"
         href="https://inspiring-duckanoo-eb1bd9.netlify.app/"
         description="Site web de location d'appartement "
         tech={['react', 'sass']}
@@ -24,7 +24,7 @@ function Projets() {
       <Projet
         title="Mon Vieux Grimoire"
         alt="Projet Mon Vieux Grimoire"
-        src="../src/assets/Grimoire-min.webp"
+        src="/Grimoire-min.webp"
         href="https://github.com/cronosu/projet7"
         description="Site web de notation de livres"
         tech={['react', 'express', 'mongodb', 'nodejs', 'api']}
@@ -32,7 +32,7 @@ function Projets() {
       <Projet
         title="Sopphie Bluel"
         alt="Projet Sopphie Bluel"
-        src="../src/assets/Sophie-min.webp"
+        src="/Sophie-min.webp"
         href="https://cronosu.github.io/projet-3_site-de-Sophie-Bluel/"
         description="Site web d'une architecte d'intérieur'"
         tech={['api']}

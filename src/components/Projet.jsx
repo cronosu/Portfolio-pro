@@ -30,23 +30,23 @@ function Projet(props) {
         <div className="projet-container-icone">
 
           {props.tech && props.tech.includes("react") && (
-            <img className="icone ico-react" src="../../src/assets/icons8-react-a-javascript-library-for-building-user-interfaces-96.png" alt="React Icon" />
+            <img className="icone ico-react" src="/icons8-react-a-javascript-library-for-building-user-interfaces-96.png" alt="React Icon" />
           )}
           {props.tech && props.tech.includes("sass") && (
-            <img className="icone ico-sass" src="../../src/assets/icons8-toupet-96.png" alt="Sass Icon" />
+            <img className="icone ico-sass" src="/icons8-toupet-96.png" alt="Sass Icon" />
           )}
           {props.tech && props.tech.includes("nodejs") && (
-            <img className="icone ico-nodejs" src="../../src/assets/icon-nodejs.png" alt="Nodejs Icon" />
+            <img className="icone ico-nodejs" src="/icon-nodejs.png" alt="Nodejs Icon" />
           )}
           {props.tech && props.tech.includes("api") && (
-            <img className="icone ico-api" src="../../src/assets/icon-api.png" alt="Api Icon" />
+            <img className="icone ico-api" src="/icon-api.png" alt="Api Icon" />
           )}
           {props.tech && props.tech.includes("mongodb") && (
-            <img className="icone ico-mongo" src="../../src/assets/icon-mongo.png" alt="MongoDB Icon" />
+            <img className="icone ico-mongo" src="/icon-mongo.png" alt="MongoDB Icon" />
           )}
           {props.tech && props.tech.includes("express") && (
-            <img className="icone ico-express" src="../../src/assets/icon-express.png" alt="Express Icon" />
-          )}
+            <img className="icone ico-express" src="/icon-express.png" alt="Express Icon" />
+          )} 
 
 
         </div>

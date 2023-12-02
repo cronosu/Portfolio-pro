@@ -1,7 +1,7 @@
 function Dispo() {
     return (
   <div className="dispo">
-<img src="../src/assets/cocher.png"/>
+<img src="/cocher.png"/>
 <p>Prêts a rejoindre l'équipe !</p>
   </div>
     )

@@ -140,16 +140,16 @@ table {
 
 
 @import './component/__Variable.scss';
-@import './component/Nav.scss';
-@import './component/Text.scss';
-@import './component/Video.scss';
-@import './component/Avatar.scss';
-@import './component/Apropos.scss';
-@import './component/Projet.scss';
-@import './component/Dispo';
-@import './MediaQuerry.scss';
-@import './component/Titre.scss';
-@import './component/Formulaire.scss';
+@import './component/__Nav.scss';
+@import './component/__Text.scss';
+@import './component/__Video.scss';
+@import './component/__Avatar.scss';
+@import './component/__Apropos.scss';
+@import './component/__Projet.scss';
+@import './component/__Dispo';
+@import './__MediaQuerry.scss';
+@import './component/__Titre.scss';
+@import './component/__Formulaire.scss';
 
 body { 
 	line-height: 1;

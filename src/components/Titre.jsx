@@ -1,3 +1,4 @@
+import React from "react";
 function Titre(props) {
   return (
     <div className="titre">

@@ -8,11 +8,8 @@
     transition: border-radius 0.3s ease-in;
     animation: 10s ease-in-out 1s infinite slidein;
     padding: 5px;
-    &:hover {
-        animation: none;
-        border-radius: 50%;
 
-    }
+   
 }
 
 @keyframes slidein {

@@ -1,5 +1,6 @@
 import Typewriter from 'typewriter-effect';
 import Avatar from './Avatar';
+import React from "react";
 
 function Text() {
   return (

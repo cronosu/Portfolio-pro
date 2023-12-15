@@ -1,3 +1,5 @@
+import React from "react"
+
 function Apropos() {
   return (
 <p className="APropos">

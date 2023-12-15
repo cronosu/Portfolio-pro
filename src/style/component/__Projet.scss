@@ -5,23 +5,34 @@
     border-radius: 20px;
     box-shadow: rgb(13, 116, 184) 5px 5px 8px, rgb(13, 116, 184) 0px 0px 8px;
     user-select: none;
-    cursor: pointer;
     padding: 15px 20px;
     max-width: 800px;
     opacity: 0;
-    transition: all 0.5s ease-in-out;
+    transition: height 0.3s ease-in-out;
     font-size: 1.5rem;
     background-color: #241f19;
     display: flex;
     flex-direction: column;
- 
-    p {
 
+    p {
+        width: 70%;
         font-size: 1.1rem;
-        flex-grow: 1; 
-    padding:6px;
-    
+        flex-grow: 1;
+        padding: 6px;
     }
+
+    .btn-savoir-plus {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9rem;
+        padding: 10px;
+        cursor: pointer;
+        gap: 5px;
+    }
+
+
 
     .title {
         color: white;
@@ -29,13 +40,14 @@
     }
 
     .img-projet {
+        cursor: pointer;
         border-radius: 2px;
         position: absolute;
         width: 120px;
         height: 210px;
         transform: rotate(-10deg);
         margin-left: 50px;
-        top: -20%;
+        top: -20px;
         right: 50vw;
         box-shadow: rgb(13, 184, 44) 1px 1px 8px;
         transition: all 0.3s ease-in-out;
@@ -44,7 +56,7 @@
         object-fit: cover;
 
         &:hover {
-            z-index: 5;
+            z-index: 500;
             transform: rotate(0deg) scale(2);
             box-shadow: none;
             animation: none;
@@ -59,9 +71,7 @@
 
         50% {
             box-shadow: rgb(13, 184, 44) 1px 1px 12px;
-
         }
-
 
         75% {
             box-shadow: rgb(13, 184, 44) 1px 1px 10px;
@@ -75,10 +85,12 @@
 
     .active {
         right: 30px;
-
-
     }
 
+}
+
+.plus-de-detail {
+    height: 300px;
 }
 
 .projets {
@@ -92,18 +104,22 @@
     justify-content: space-around;
     gap: 150px;
     background-color: rgb(23, 22, 22);
-    margin-top: 50px;
+    margin-top: -250px;
     padding-bottom: 350px;
+
     .active {
-
         opacity: 1;
+    }
 
+    .plus {
+        cursor: pointer;
     }
 }
 
 .projet-container {
     padding: 5px;
     gap: 5px;
+
 }
 
 .projet-container-icone {
@@ -112,9 +128,23 @@
     margin-top: 10px;
 }
 
+.savoir-plus {
+    padding-top: 150px;
+    display: flex;
+    height: 100%;
+    width: 70%;
+    opacity: 0;
+}
+
+.btn-savoir-plus {
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 100px);
+}
+
 .titre {
     font-size: 2rem;
-   
 }
 
 .icone {

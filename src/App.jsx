@@ -6,6 +6,8 @@ import Apropos from "./components/APropos"
 import Projets from "./page/Projets"
 import Dispo from "./components/Dispo"
 import Formulaire from "./components/Formulaire"
+import MyTech from "./page/MyTech"
+import MonParcour from "./components/MonParcour"
 
 function App() {
   return (
@@ -20,7 +22,8 @@ function App() {
      
         </div>
       </div>
-
+     < MyTech/>
+     <MonParcour/>
       <Projets/>
       <Formulaire/>
     </>

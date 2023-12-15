@@ -1,0 +1,47 @@
+[
+    {
+        "titre": "Kasa",
+        "description": "Site web de location d'appartement",
+        "alt": "Projet Kasa",
+        "image": "/Kasa-min.webp",
+        "tech": [
+            "react",
+            "sass"
+        ],
+        "href": "https://inspiring-duckanoo-eb1bd9.netlify.app/"
+    },
+    {
+        "titre": "Mon Vieux Grimoire",
+        "description": "Site web de notation de livres",
+        "alt": "Projet Mon Vieux Grimoire",
+        "image": "/Grimoire-min.webp",
+        "tech": [
+            "react",
+            "express",
+            "mongodb",
+            "nodejs",
+            "api"
+        ],
+        "href": "https://github.com/cronosu/projet7"
+    },
+    {
+        "titre": "Sopphie Bluel",
+        "description": "Site web d'une architecte d'intérieur",
+        "alt": "Projet Sopphie Bluel",
+        "image": "/Sophie-min.webp",
+        "tech": [
+            "api"
+        ],
+        "href": "https://cronosu.github.io/projet-3_site-de-Sophie-Bluel/"
+    },
+    {
+        "titre": "test",
+        "description": "test d'un effet au scroll",
+        "alt": "test",
+        "image": "/test.webp",
+        "tech": [
+            ""
+        ],
+        "href": "https://codepen.io/Sylvain-Stoclet/pen/VwgNyza"
+    }
+]

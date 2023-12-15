@@ -4,7 +4,6 @@
 */
 *{
 	scroll-behavior: smooth;
-
 }
 
 html,
@@ -137,8 +136,6 @@ table {
 	border-spacing: 0;
 }
 
-
-
 @import './component/__Variable.scss';
 @import './component/__Nav.scss';
 @import './component/__Text.scss';
@@ -147,9 +144,12 @@ table {
 @import './component/__Apropos.scss';
 @import './component/__Projet.scss';
 @import './component/__Dispo';
-@import './__MediaQuerry.scss';
 @import './component/__Titre.scss';
 @import './component/__Formulaire.scss';
+@import './component/__Card-MyTech.scss';
+@import './component/__MonParcour.scss';
+
+@import './__MediaQuerry.scss';
 
 body { 
 	line-height: 1;
@@ -169,14 +169,14 @@ body {
 
 .cadre {
 	border: 1px solid rgb(255, 215, 0);
-	min-height: 350px;
+	min-height: 450px;
 	margin: 0 5%;
 	height: calc(100vh - 130px);
 	padding: 20px;
-
 	border-radius: 10px;
 	transform: skewY(-2deg);
 	z-index: 30;
+
 }
 
 .cadre::before {

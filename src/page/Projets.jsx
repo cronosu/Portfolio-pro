@@ -1,10 +1,18 @@
 import Projet from "../components/Projet"
 import Titre from "../components/Titre"
-
+import work from "../../work.json"
+import { useState } from "react"
+import React from "react";
 
 
 function Projets() {
+  const [nbrWork, setNbrWork] = useState(3);
 
+  const handleClick = () => {
+    setNbrWork(nbrWork === 3 ? 50 : 3);
+  };
+
+  const btnText = nbrWork === 3 ? 'Afficher plus' : 'Afficher moins';
 
   return (
     <div className="projets">
@@ -13,31 +21,24 @@ function Projets() {
         id="projets"
 
       />
-      <Projet
-        title="Kasa"
-        alt="Projet Kasa"
-        src="/Kasa-min.webp"
-        href="https://inspiring-duckanoo-eb1bd9.netlify.app/"
-        description="Site web de location d'appartement "
-        tech={['react', 'sass']}
-      />
-      <Projet
-        title="Mon Vieux Grimoire"
-        alt="Projet Mon Vieux Grimoire"
-        src="/Grimoire-min.webp"
-        href="https://github.com/cronosu/projet7"
-        description="Site web de notation de livres"
-        tech={['react', 'express', 'mongodb', 'nodejs', 'api']}
-      />
-      <Projet
-        title="Sopphie Bluel"
-        alt="Projet Sopphie Bluel"
-        src="/Sophie-min.webp"
-        href="https://cronosu.github.io/projet-3_site-de-Sophie-Bluel/"
-        description="Site web d'une architecte d'intérieur'"
-        tech={['api']}
-      />
-      <p>Afficher plus</p>
+      {work.map((projet, index) => {
+        if (index < nbrWork) {
+          return (
+            <Projet
+              key={index}
+              title={projet.titre}
+              alt={projet.alt}
+              src={projet.image}
+              href={projet.href}
+              description={projet.description}
+              tech={projet.tech}
+            />
+          );
+        }
+        return null; 
+      })}
+
+      <p className="plus" onClick={handleClick}>{btnText}</p>
 
     </div>
 

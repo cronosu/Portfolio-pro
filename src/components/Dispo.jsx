@@ -1,8 +1,10 @@
+import React from "react"
+
 function Dispo() {
     return (
   <div className="dispo">
 <img src="/cocher.png"/>
-<p>Prêts a rejoindre l'équipe !</p>
+<p>Prêts a rejoindre votre projet !</p>
   </div>
     )
   }

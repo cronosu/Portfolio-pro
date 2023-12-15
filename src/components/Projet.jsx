@@ -1,8 +1,11 @@
+import React, { Children, useState } from "react";
 import { useEffect, useRef } from "react"
 
 function Projet(props) {
+  const [plus, setPlus] = useState(false)
   const projetImg = useRef();
   const projet = useRef();
+
 
   useEffect(() => {
     const options = {
@@ -22,9 +25,25 @@ function Projet(props) {
 
   }, [])
 
+
+
+  const openProjet = (e) => {
+    setPlus(true)
+    e.target.parentNode.style.height = "700px";
+    e.target.parentNode.querySelector('img').style.top = "20px";
+
+
+    if (plus === true) {
+      setPlus(false)
+      e.target.parentNode.style.height = "180px";
+      e.target.parentNode.querySelector('img').style.top = "-20px"
+    }
+  }
+
+
   return (
     <div ref={projet} className="projet" >
-      <a href={props.href}> <img className="img-projet" alt={props.alt} ref={projetImg} src={props.src} /> </a>
+      <a target="_blank" href={props.href}> <img className="img-projet" alt={props.alt} ref={projetImg} src={props.src} /> </a>
       <div className="projet-container">
         <h2 className='title' >Nom du projet : {props.title}</h2>
         <div className="projet-container-icone">
@@ -46,7 +65,7 @@ function Projet(props) {
           )}
           {props.tech && props.tech.includes("express") && (
             <img className="icone ico-express" src="/icon-express.png" alt="Express Icon" />
-          )} 
+          )}
 
 
         </div>
@@ -54,8 +73,19 @@ function Projet(props) {
 
 
       </div>
-      <p>{props.description}</p>
-   
+      <div className="container-descrition">
+        <p>{props.description}</p>
+        {plus === true ? (
+          <div 
+          className="savoir-plus">
+   "Children"
+          </div>
+        )
+          :
+          (null)}
+      </div>
+      <div onClick={openProjet} className="btn-savoir-plus">En savoir plus</div>
+
     </div>
 
   )

@@ -1,21 +1,92 @@
 @media (max-width: 1268px) {
-    h1 {
+    .Text h1 {
         font-size: 30px;
     }
+
     .Typewriter__wrapper {
-        font-size: 1.1em;    
+        font-size: 1.1em;
     }
+
     .avatar {
         height: 200px;
     }
+
     .dispo {
-      p{
-        font-size: 0.6em;    
-      }
+        p {
+            font-size: 0.6em;
+        }
+
         margin-left: 50px;
 
         img {
-            height: 12px;            
+            height: 12px;
         }
+    }
+    
+    .APropos {
+      
+      margin: 50px;
+    }
+}
+
+@media (max-width: 726px) {
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .avatar {
+        display: none;
+    }
+    .titre {
+       
+        h2{
+    font-size: 1.2rem;
+        }
+    }
+  
+
+    .APropos {
+        width: 100%;
+        padding: 0;
+        margin: 50px;
+        font-size: 0.8rem;
+        line-height: 15px;
+    }
+
+}
+
+@media (max-width: 571px) {
+    .projet a .img-projet {
+        opacity: 0.4;
+        transform: rotate(-5deg);
+        border: 1px solid black;
+        border-radius: 5px;
+
+        &:hover {
+            opacity: 1;
+            rotate: none;
+            transform: none;
+
+
+        }
+    }
+
+    .Text {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        gap: 10px;
+
+    }
+
+    .card h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 460px) {
+    nav ul li a {
+        font-size: 0.7em;
+
     }
 }

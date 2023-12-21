@@ -2,8 +2,11 @@
     {
         "titre": "Kasa",
         "description": "Site web de location d'appartement",
+        "descriptionDetail": "Projet n°7 de la formation Développeur Web OPENCLASSROOMS.\n\n Contexte : Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans. \nL'entreprise souhaite faire une refonte totale de son site web.\n\n Objectifs : Développer l'ensemble de l'application et ses composants avec React, en suivant les maquettes Figma fournies.\n Des composants réutilisables doivent être créés pour les onglets ouvrants et le carrousel de photo.",
         "alt": "Projet Kasa",
         "image": "/Kasa-min.webp",
+        "images": ["/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp"],
+        "aPropos": "Sur ce sujet rien a dire ",
         "tech": [
             "react",
             "sass"
@@ -15,6 +18,7 @@
         "description": "Site web de notation de livres",
         "alt": "Projet Mon Vieux Grimoire",
         "image": "/Grimoire-min.webp",
+        "images": ["/Grimoire-min.webp"],
         "tech": [
             "react",
             "express",
@@ -29,6 +33,7 @@
         "description": "Site web d'une architecte d'intérieur",
         "alt": "Projet Sopphie Bluel",
         "image": "/Sophie-min.webp",
+        "images": ["/Sophie-min.webp"],
         "tech": [
             "api"
         ],
@@ -39,6 +44,7 @@
         "description": "test d'un effet au scroll",
         "alt": "test",
         "image": "/test.webp",
+        "images": ["/test.webp"],
         "tech": [
             ""
         ],

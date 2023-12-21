@@ -39,7 +39,6 @@ function Formulaire() {
               console.log(error.text);
             });
         } else {
-          console.log("test");
           setMessage("error-form");
         }
 

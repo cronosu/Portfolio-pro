@@ -20,7 +20,7 @@ Après mes études, j'ai eu l'occasion de travailler chez la grande entreprise M
 
 Cette expérience m'a permis d'acquérir une expertise en gestion du personnel et de développer des compétences telles que la patience ou le travail en équipe .<br/><br/>
 
-Actuellement, suite a une reconversion professionnel, je suis très motivé à poursuivre mes ambitions premiere dans developpement web , car je suis convaincu que cette passion  m'épanouira pleinement dans ma vie professionnel comme personnel.<br/><br/>
+Actuellement, suite a une reconversion professionnel, je suis très motivé à poursuivre mes ambitions premiere dans le developpement web, car je suis convaincu que cette passion m'épanouira pleinement dans ma vie professionnel comme personnel.<br/><br/>
 
 Sur mon temps libre, j'aime les consacrer à ma passion cinéphil, developper des projects personnel, mes enfants et jouer aux jeux video et j'aspire à être heureux dans tous les domaines .<br/><br/>
 

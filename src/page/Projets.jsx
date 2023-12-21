@@ -1,9 +1,11 @@
 import Projet from "../components/Projet"
 import Titre from "../components/Titre"
 import work from "../../work.json"
-import { useState } from "react"
+import { createContext, useState,useContext } from "react"
 import React from "react";
+import Modal from "../components/Modal"
 
+export const ProjectInfos =createContext(work);
 
 function Projets() {
   const [nbrWork, setNbrWork] = useState(3);
@@ -15,7 +17,8 @@ function Projets() {
   const btnText = nbrWork === 3 ? 'Afficher plus' : 'Afficher moins';
 
   return (
-    <div className="projets">
+    <ProjectInfos.Provider  value={work}>
+     <div className="projets">
       <Titre
         titre="Projets Sélectionné"
         id="projets"
@@ -29,9 +32,13 @@ function Projets() {
               title={projet.titre}
               alt={projet.alt}
               src={projet.image}
+              images={projet.images}
               href={projet.href}
               description={projet.description}
+              descriptionDetail={projet.descriptionDetail}
               tech={projet.tech}
+              aPropos={projet.aPropos}
+
             />
           );
         }
@@ -39,9 +46,8 @@ function Projets() {
       })}
 
       <p className="plus" onClick={handleClick}>{btnText}</p>
-
     </div>
-
+  </ProjectInfos.Provider>
   )
 }
 

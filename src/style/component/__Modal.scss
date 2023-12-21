@@ -1,0 +1,172 @@
+.w3-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.w3-modal-content {
+    margin: 60px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    background-color: #000000;
+    border-radius: 0 30px;
+
+    header {
+        position: relative;
+    }
+}
+
+.close-x {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: transform .3s ease;
+
+    &:hover {
+        transform: scale(1.5);
+    }
+}
+
+.w3-animate-zoom {
+    animation: zoom 0.6s;
+}
+
+.w3-container {
+    padding: 20px 16px;
+
+}
+
+.onglet {
+    padding: 50px;
+}
+
+.w3-container> :not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.w3-bar {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+
+    button {
+        border-radius: 0 10px 0 0;
+    }
+}
+
+.w3-button {
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    background-color: #2b2b2b;
+    transition: background-color .3s ease;
+
+}
+
+.w3-grey {
+    &:hover {
+        background-color: #4f4f4f;
+    }
+}
+
+
+.w3-red {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.light-grey {
+    margin-top: 10px;
+    height: 5px;
+    background-color: #2b2b2b;
+
+    border-radius: 0 20px;
+}
+
+.w3-border-bottom {
+    border-bottom: 1px solid #2b2b2b;
+}
+
+
+
+.w3-right {
+    float: right;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+#id01 {
+    background-color: #0000008f;
+}
+
+
+
+.images {
+   // display: flex;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+.city {
+    height: 65vh;
+    overflow-y: auto;
+    white-space: pre-line;
+
+    p {
+        line-height: 30px;
+
+    }
+}
+
+.images-modal-visible {
+    position: absolute;
+    position: fixed;
+    background-color: #000000b5;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+
+    overflow: auto;
+    img {
+        height: auto;
+        width: auto;
+        max-width:300%;
+       max-height: 100%;
+     
+    }
+}
+
+.images-modal {
+    display: none;
+
+}

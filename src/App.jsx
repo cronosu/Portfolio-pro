@@ -9,6 +9,7 @@ import Formulaire from "./components/Formulaire"
 import MyTech from "./page/MyTech"
 import MonParcour from "./components/MonParcour"
 
+
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
      <MonParcour/>
       <Projets/>
       <Formulaire/>
+
     </>
   )
 }

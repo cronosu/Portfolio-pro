@@ -1,17 +1,24 @@
-import React, { Children, useState } from "react";
+import React, { useContext, useState } from "react";
 import { useEffect, useRef } from "react"
+import Modal from "./Modal";
+import { ProjectInfos } from "../page/Projets";
 
 function Projet(props) {
   const [plus, setPlus] = useState(false)
+  const [modalOpen, setmodalOpen] = useState(false)
+ 
   const projetImg = useRef();
   const projet = useRef();
-
+  
+  const ProjetInfos = useContext(ProjectInfos)
 
   useEffect(() => {
     const options = {
       rootMargin: "-20% 0px",
-      threshold: 0
+      threshold: 0,
+  
     }
+
     const observer = new IntersectionObserver(entries => {
       if (entries[0].isIntersecting) {
         projetImg.current.classList.add("active");
@@ -22,27 +29,31 @@ function Projet(props) {
 
 
     observer.observe(projetImg.current);
-
+    
   }, [])
 
-
-
-  const openProjet = (e) => {
-    setPlus(true)
-    e.target.parentNode.style.height = "700px";
-    e.target.parentNode.querySelector('img').style.top = "20px";
-
-
-    if (plus === true) {
-      setPlus(false)
-      e.target.parentNode.style.height = "180px";
-      e.target.parentNode.querySelector('img').style.top = "-20px"
-    }
+  const openProjet = (event) => {
+    setmodalOpen(!modalOpen)
+   
   }
+
 
 
   return (
     <div ref={projet} className="projet" >
+      {modalOpen ? (
+        <Modal 
+        onClick={openProjet}
+        title={props.title}
+        img={props.images}
+        descriptionDetail={props.descriptionDetail}
+        tech={props.tech}
+        aPropos={props.aPropos}
+        />
+      ) : (
+        null
+      )}
+
       <a target="_blank" href={props.href}> <img className="img-projet" alt={props.alt} ref={projetImg} src={props.src} /> </a>
       <div className="projet-container">
         <h2 className='title' >Nom du projet : {props.title}</h2>
@@ -74,11 +85,11 @@ function Projet(props) {
 
       </div>
       <div className="container-descrition">
-        <p>{props.description}</p>
+        <p className="container-descrition-description">{props.description}</p>
         {plus === true ? (
-          <div 
-          className="savoir-plus">
-   "Children"
+          <div
+            className="savoir-plus">
+      
           </div>
         )
           :

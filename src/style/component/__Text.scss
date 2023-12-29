@@ -4,13 +4,15 @@
     align-items: end;
     z-index: 5;
     text-shadow: $cadre-shadow;
+    h1 {
+
+        font-size: 40px;
+        color: white;
+        padding: 0 20px 0 100px;
+    }
 }
 
-h1 {
-    font-size: 40px;
-    color: white;
-    padding: 0 20px 0 50px;
-}
+
 
 .Typewriter__wrapper {
     font-family: $main-font;

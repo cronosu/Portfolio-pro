@@ -1,24 +1,31 @@
 [
     {
         "titre": "Kasa",
-        "description": "Site web de location d'appartement",
+        "description": "Intégration d'un site web de location d'appartement en React",
+        "commentaire" :" {titre,description ect...}",
         "descriptionDetail": "Projet n°7 de la formation Développeur Web OPENCLASSROOMS.\n\n Contexte : Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans. \nL'entreprise souhaite faire une refonte totale de son site web.\n\n Objectifs : Développer l'ensemble de l'application et ses composants avec React, en suivant les maquettes Figma fournies.\n Des composants réutilisables doivent être créés pour les onglets ouvrants et le carrousel de photo.",
         "alt": "Projet Kasa",
+        "défi": "Comprendre React rapidement\n\n Intégrer une maquette from scratch",
         "image": "/Kasa-min.webp",
-        "images": ["/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp","/Kasa-min.webp"],
-        "aPropos": "Sur ce sujet rien a dire ",
+        "images": ["/Kasa-min.webp","/Kasa-2-min.webp","/Kasa-3-min.webp","/Kasa-4-min.webp"],
+        "aPropos": "Sur ce projet j'ai appris a utilisé react et a comprendre ça puissance dans les composants , les hooks et le systeme de routage ",
         "tech": [
             "react",
-            "sass"
+            "sass",
+            "vite",
+            "figma"
         ],
+        "techUse":" Pour ce projet l'intégration du site a été faite avec React a paartir d'une maquette figma ce qui m'a permis dans apprendre beaucoup sur cette librairie",
         "href": "https://inspiring-duckanoo-eb1bd9.netlify.app/"
     },
     {
         "titre": "Mon Vieux Grimoire",
         "description": "Site web de notation de livres",
+        "descriptionDetail": "Projet n°8 de la formation Développeur Web OPENCLASSROOMS.\n\n Contexte : Je suis développeur back-end en freelance depuis maintenant un an dans la région de Lille. J'ai l’habitude de travailler avec Kévin, un développeur front-end plus expérimenté que moi, et qui a déjà un bon réseau de contacts dans le milieu.\n\n Kévin me contacte pour me proposer de travailler avec lui en mutualisant nos compétences front / back sur un tout nouveau projet qui lui a été proposé.\n\n Il s’agit d’une petite chaîne de librairies qui souhaite ouvrir un site de référencement et de notation de livres.\n\n Objectifs : Développer le back-end du site en prenant en compte les spécifications, la gestion des erreurs et la sécurité.",
         "alt": "Projet Mon Vieux Grimoire",
         "image": "/Grimoire-min.webp",
-        "images": ["/Grimoire-min.webp"],
+        "images": ["/Grimoire-min.webp","/Grimoire-2-min.webp","/Grimoire-3-min.webp","/Grimoire-4-min.webp"],
+        "aPropos": "La création complète d'une API a été trés instructif , j'ai adoré ce projet\n\n Les opérations CRUD,les controlers,les middlewares, les shemas et le systeme d'authentification par token",
         "tech": [
             "react",
             "express",
@@ -26,28 +33,37 @@
             "nodejs",
             "api"
         ],
-        "href": "https://github.com/cronosu/projet7"
+        "techUse":"Ce projet été principalement fait pour apprendre la création d'une API a partir d'un front end deja mis en place",
+        "href":"https://github.com/cronosu/projet7"
     },
     {
-        "titre": "Sopphie Bluel",
-        "description": "Site web d'une architecte d'intérieur",
-        "alt": "Projet Sopphie Bluel",
+        "titre": "Sophie Bluel",
+        "description": "Portfolio d'une architecte d'intérieur",
+        "descriptionDetail": "Projet n°3 de la formation Développeur Web OPENCLASSROOMS.\n\n Contexte : Vous travaillez comme développeur front-end pour l’agence ArchiWebos \n\n  Objectifs :  Développer \n\n1/ la page de présentation des travaux de l'architecte\n\n2/ la page de connexion de l'administrateur du site (le client) (code à créer de zéro) \n\n3/ la modale permettant d'uploader de nouveaux médias (code créer from scratch).",
+        "alt": "Projet Sophie Bluel",
         "image": "/Sophie-min.webp",
-        "images": ["/Sophie-min.webp"],
+        "images": ["/Sophie-min.webp","/Sophie-2-min.webp","/Sophie-3-min.webp","/Sophie-4-min.webp"],
+        "aPropos": "Projet intéressant qui m'a permis d'approfondir le javascript et de créer une page login avec authentification par token",
         "tech": [
-            "api"
+            "javascript"
         ],
+        "techUse":" Pour ce projet la création de modal a était fait en javascript vanilla ",
         "href": "https://cronosu.github.io/projet-3_site-de-Sophie-Bluel/"
     },
     {
         "titre": "test",
         "description": "test d'un effet au scroll",
+        "descriptionDetail": "Petit projet réalisé pour aider une personne qui avait besoin de ce bout de code pour ses cours.\n\n Objectif : réaliser une animation au scroll ",
         "alt": "test",
         "image": "/test.webp",
-        "images": ["/test.webp"],
+        "images": ["/test.webp","/test-2.webp","/test-3.webp"],
+        "aPropos": "Projet effectué pour aider une personne d'une communauté sur un serveur discord ",
         "tech": [
-            ""
+            "javascript"
         ],
+        "techUse":"Javascript vanilla sur le site https://codepen.io/ ",
         "href": "https://codepen.io/Sylvain-Stoclet/pen/VwgNyza"
     }
+
 ]
+

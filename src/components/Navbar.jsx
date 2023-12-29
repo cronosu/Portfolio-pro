@@ -6,6 +6,9 @@ function Navbar() {
   return (
     <nav>
       <div className="container-icone-reseau">
+        <a target="_blank" href="https://drive.google.com/file/d/1sy3exjkVA7heO8x7VEKDJYQwdE377SVP/view?usp=sharing">
+          <img className="icone-reseau icone-cv" src="./approuve.png"></img>
+        </a>
         <a target="_blank" href="https://www.linkedin.com/in/sylvain-stoclet/">
           <img className="icone-reseau" src="./linkedin.png"></img>
         </a>
@@ -13,7 +16,7 @@ function Navbar() {
           <img className="icone-reseau" src="./github.png"></img>
         </a>
       </div>
-      
+
       <ul>
 
 

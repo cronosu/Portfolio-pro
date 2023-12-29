@@ -3,13 +3,12 @@
     right: 10%;
     height: 300px;
     top: 20%;
-    border: 8px solid rgb(57, 57, 57);
+    border: 8px solid rgba(0, 94, 255, 0.5);
     border-radius: 69% 31% 57% 43% / 30% 47% 53% 70%;
     transition: border-radius 0.3s ease-in;
     animation: 10s ease-in-out 1s infinite slidein;
-    padding: 5px;
+    background-color: rgba(6, 75, 112, 0.764);
 
-   
 }
 
 @keyframes slidein {

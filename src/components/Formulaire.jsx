@@ -14,8 +14,8 @@ function Formulaire() {
       const timer = setTimeout(() => {
         setMessage(null);
       }, 10000);
-  
-      return () => clearTimeout(timer); 
+
+      return () => clearTimeout(timer);
     }
   }, [message]);
 
@@ -60,6 +60,7 @@ function Formulaire() {
           titre="Me Contacter"
           id="formulaire"
         />
+        <p>Vous pouvez me contacter par téléphone au : 07.69.43.35.66 </p>
         <form ref={form} onSubmit={sendEmail} name="contact" method="post">
           <div className="formulaire-label-input">
             <label htmlFor="user_name">Nom</label>
@@ -83,7 +84,7 @@ function Formulaire() {
           <button type="submit">Envoyer</button>
 
         </form>
-  
+
         {
           message === null ? null :
             message === 'error-form' ?

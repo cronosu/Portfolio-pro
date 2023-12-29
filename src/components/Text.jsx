@@ -7,6 +7,7 @@ function Text() {
     <div className='Text'>
       <h1>STOCLET Sylvain </h1><h2>
       <Typewriter 
+
       wrapperClassName='Typewriter__wrapper'
   options={{
     strings: [

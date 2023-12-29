@@ -8,26 +8,24 @@ import Dispo from "./components/Dispo"
 import Formulaire from "./components/Formulaire"
 import MyTech from "./page/MyTech"
 import MonParcour from "./components/MonParcour"
+import Footer from "./components/Footer"
 
 
 function App() {
   return (
     <>
-     <Video/>
+      <Video />
       <Navbar />
       <div className="cadre">
-        <Text /> 
-        <Dispo/>
-        <div className="containerAPropos">
-        <Apropos/>
-     
-        </div>
+        <Text />
+        <Dispo />
+        <Apropos />
       </div>
-     < MyTech/>
-     <MonParcour/>
-      <Projets/>
-      <Formulaire/>
-
+      < MyTech />
+      <MonParcour />
+      <Projets />
+      <Formulaire />
+      <Footer />
     </>
   )
 }

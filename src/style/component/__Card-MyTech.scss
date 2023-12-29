@@ -35,9 +35,10 @@
 
         &:hover{
             
-            box-shadow: 1px 0px 25px  rgb(16, 37, 60);
+        box-shadow: 1px 0px 25px  rgb(16, 37, 60);
           transform: translate(0,-5px);
           background-color: rgb(16, 37, 60);
+     
         }
 
         h1 {
@@ -46,7 +47,6 @@
             font-family: $main-font;
             color: #FFFFFF;
             text-shadow: 5px 2px 1px #aba8a828;
-        
             animation: shadow 10s ease-in-out infinite;
 
         }
@@ -87,7 +87,7 @@
 
 @keyframes shadow {
     30% {
-        text-shadow: 0px 2px 1px #aba8a828;
+        text-shadow: 2px 5px 1px #aba8a828;
     }
 
     66% {

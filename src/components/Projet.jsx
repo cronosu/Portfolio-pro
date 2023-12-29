@@ -1,43 +1,35 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { useEffect, useRef } from "react"
 import Modal from "./Modal";
-import { ProjectInfos } from "../page/Projets";
 
 function Projet(props) {
   const [plus, setPlus] = useState(false)
   const [modalOpen, setmodalOpen] = useState(false)
  
-  const projetImg = useRef();
-  const projet = useRef();
+  const projetImg = useRef(null);
+  const projet = useRef(null);
   
-  const ProjetInfos = useContext(ProjectInfos)
-
   useEffect(() => {
     const options = {
       rootMargin: "-20% 0px",
       threshold: 0,
-  
     }
 
     const observer = new IntersectionObserver(entries => {
-      if (entries[0].isIntersecting) {
+      if (entries[0].isIntersecting ) {
         projetImg.current.classList.add("active");
         projet.current.classList.add("active");
         observer.unobserve(projetImg.current)
       }
     }, options)
-
-
     observer.observe(projetImg.current);
-    
   }, [])
 
   const openProjet = (event) => {
-    setmodalOpen(!modalOpen)
-   
+    if (event.target.classList.contains("close-open")) {
+      setmodalOpen(!modalOpen) 
+    }
   }
-
-
 
   return (
     <div ref={projet} className="projet" >
@@ -48,6 +40,7 @@ function Projet(props) {
         img={props.images}
         descriptionDetail={props.descriptionDetail}
         tech={props.tech}
+        techUse={props.techUse}
         aPropos={props.aPropos}
         />
       ) : (
@@ -77,6 +70,15 @@ function Projet(props) {
           {props.tech && props.tech.includes("express") && (
             <img className="icone ico-express" src="/icon-express.png" alt="Express Icon" />
           )}
+           {props.tech && props.tech.includes("vite") && (
+            <img className="icone ico-vite" src="https://github.com/marwin1991/profile-technology-icons/assets/62091613/b40892ef-efb8-4b0e-a6b5-d1cfc2f3fc35" alt="Vite Icon" />
+          )}
+           {props.tech && props.tech.includes("figma") && (
+            <img className="icone ico-figma" src="https://user-images.githubusercontent.com/25181517/189715289-df3ee512-6eca-463f-a0f4-c10d94a06b2f.png" alt="Figma Icon" />
+          )}
+           {props.tech && props.tech.includes("javascript") && (
+            <img className="icone ico-js" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png" alt="Js Icon" />
+          )}
 
 
         </div>
@@ -95,7 +97,7 @@ function Projet(props) {
           :
           (null)}
       </div>
-      <div onClick={openProjet} className="btn-savoir-plus">En savoir plus</div>
+      <div onClick={openProjet} className="btn-savoir-plus close-open">En savoir plus</div>
 
     </div>
 

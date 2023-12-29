@@ -4,20 +4,23 @@ import { useState } from "react"
 function Modal(props) {
   const [Onglet, setOnglet] = useState(1);
   const [imgModal, setImgModal] = useState('images-modal');
+
   const openCity = (numOnglet) => {
     setOnglet(numOnglet);
   }
-  const modalImg = () => {
-    setImgModal(prevModal => prevModal === 'images-modal' ? 'images-modal-visible' : 'images-modal');
+  const modalImg = (e) => {
+    e.target.parentNode.classList.toggle('images-modal-visible');
+    
+  // setImgModal(prevModal => prevModal === 'images-modal' ? 'images-modal-visible' : 'images-modal');
   };
 
   return (
-    <div className="w3-modal" id="id01">
+    <div  onClick={props.onClick} className="w3-modal close-open" id="id01">
       <div className="w3-modal-content w3-card-4 w3-animate-zoom">
         <header className="w3-container w3-blue">
           <span
             onClick={props.onClick}
-            className="close-x"
+            className="close-x close-open"
           >&times;</span>
           <h2>{props.title}</h2>
         </header>
@@ -70,10 +73,18 @@ function Modal(props) {
               {props.tech && props.tech.includes("express") && (
                 <img className="icone ico-express" src="/icon-express.png" alt="Express Icon" />
               )}
-
+              {props.tech && props.tech.includes("vite") && (
+                <img className="icone ico-vite" src="https://github.com/marwin1991/profile-technology-icons/assets/62091613/b40892ef-efb8-4b0e-a6b5-d1cfc2f3fc35" alt="Vite Icon" />
+              )}
+              {props.tech && props.tech.includes("figma") && (
+                <img className="icone ico-figma" src="https://user-images.githubusercontent.com/25181517/189715289-df3ee512-6eca-463f-a0f4-c10d94a06b2f.png" alt="Figma Icon" />
+              )}
+              {props.tech && props.tech.includes("javascript") && (
+                <img className="icone ico-js" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png" alt="Js Icon" />
+              )}
 
             </div>
-            <p>Pour ce projet .....</p>
+            <p>{props.techUse}</p>
           </div>
         )}
 
@@ -89,10 +100,10 @@ function Modal(props) {
             <div className="images">
               {props.img.map((e, index) => (
                 <div className="images-container" key={`image_${index}`}>
-                  <img onClick={modalImg} src={e} alt={`Image ${index}`} />
-                  
+                  <img onClick={modalImg} src={e} alt={`Image ${index+1}`} />
+
                   <div onClick={modalImg} className={imgModal}>
-                    <img  src={e} alt={`Image ${index}`} />
+                    <img src={e} alt={`Image ${index+1}`} />
                   </div>
                 </div>
               ))}

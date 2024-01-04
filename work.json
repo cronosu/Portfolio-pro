@@ -8,7 +8,7 @@
         "défi": "Comprendre React rapidement\n\n Intégrer une maquette from scratch",
         "image": "/Kasa-min.webp",
         "images": ["/Kasa-min.webp","/Kasa-2-min.webp","/Kasa-3-min.webp","/Kasa-4-min.webp"],
-        "aPropos": "Sur ce projet j'ai appris a utilisé react et a comprendre ça puissance dans les composants , les hooks et le systeme de routage ",
+        "aPropos": "Sur ce projet j'ai appris a utilisé react et a comprendre ça puissance dans les composants , les hooks et le systeme de routage de React router",
         "tech": [
             "react",
             "sass",
@@ -16,6 +16,7 @@
             "figma"
         ],
         "techUse":" Pour ce projet l'intégration du site a été faite avec React a paartir d'une maquette figma ce qui m'a permis dans apprendre beaucoup sur cette librairie",
+        "defis": "Créer une APP web en React depuis zero",
         "href": "https://inspiring-duckanoo-eb1bd9.netlify.app/"
     },
     {
@@ -25,7 +26,7 @@
         "alt": "Projet Mon Vieux Grimoire",
         "image": "/Grimoire-min.webp",
         "images": ["/Grimoire-min.webp","/Grimoire-2-min.webp","/Grimoire-3-min.webp","/Grimoire-4-min.webp"],
-        "aPropos": "La création complète d'une API a été trés instructif , j'ai adoré ce projet\n\n Les opérations CRUD,les controlers,les middlewares, les shemas et le systeme d'authentification par token",
+        "aPropos": "La création complète d'une API a été trés instructif , j'ai adoré ce projet.\n\n Les opérations CRUD, les controlers, les middlewares, les shemas et le systeme d'authentification par token",
         "tech": [
             "react",
             "express",
@@ -34,6 +35,7 @@
             "api"
         ],
         "techUse":"Ce projet été principalement fait pour apprendre la création d'une API a partir d'un front end deja mis en place",
+        "defis": "Créer une API depuis zero et comprendre le CRUD",
         "href":"https://github.com/cronosu/projet7"
     },
     {
@@ -48,10 +50,11 @@
             "javascript"
         ],
         "techUse":" Pour ce projet la création de modal a était fait en javascript vanilla ",
+        "defis": "Création d'une modal et authentification par token",
         "href": "https://cronosu.github.io/projet-3_site-de-Sophie-Bluel/"
     },
     {
-        "titre": "test",
+        "titre": "Test",
         "description": "test d'un effet au scroll",
         "descriptionDetail": "Petit projet réalisé pour aider une personne qui avait besoin de ce bout de code pour ses cours.\n\n Objectif : réaliser une animation au scroll ",
         "alt": "test",
@@ -62,6 +65,7 @@
             "javascript"
         ],
         "techUse":"Javascript vanilla sur le site https://codepen.io/ ",
+        "defis": "Créer l'animation pour qu'elle soit harmonieuse et sans bug ",
         "href": "https://codepen.io/Sylvain-Stoclet/pen/VwgNyza"
     }
 

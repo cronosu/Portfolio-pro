@@ -1,8 +1,9 @@
 @media (max-width: 1268px) {
     .Text h1 {
         font-size: 30px;
-        padding-left:50px;
+        padding-left: 50px;
     }
+
     .Typewriter__wrapper {
         font-size: 1.1em;
     }
@@ -22,10 +23,15 @@
             height: 12px;
         }
     }
-    
+
     .APropos {
-      
-      margin: 50px;
+
+        margin: 50px;
+    }
+
+    .container-card-titre {
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 49% 95%, 0 100%);
+
     }
 }
 
@@ -33,19 +39,22 @@
     nav ul li a {
         font-size: 1em;
     }
+
     .Text h1 {
         font-size: 30px;
     }
+
     .avatar {
         display: none;
     }
+
     .titre {
-       
-        h2{
-    font-size: 1.2rem;
+
+        h2 {
+            font-size: 1.2rem;
         }
     }
-  
+
 
     .APropos {
         width: 100%;
@@ -54,25 +63,50 @@
         font-size: 0.8rem;
         line-height: 15px;
     }
+
+    .presentation p {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .contact{
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+    }
+
     .footer-links {
         flex-direction: column;
     }
+.w3-border-bottom{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+
+button{
+   border-radius: 0;
+}
+}
+
+
 }
 
 @media (max-width: 571px) {
+    .projets{
+        gap: 70px;
+       
+    }
     .projet a .img-projet {
         opacity: 0.4;
         transform: rotate(-5deg);
         border: 1px solid black;
         border-radius: 5px;
 
+
         &:hover {
-            opacity: 1;
-            rotate: none;
-            transform: none;
-
-
+            z-index: initial;
+            transform: initial;
+            box-shadow: initial;
+            transform: rotate(-5deg);
         }
+
     }
 
     .Text {
@@ -85,13 +119,48 @@
 
     .card h1 {
         font-size: 1.5em;
-        
+
+    }
+
+    .projet .container-descrition-description {
+        width: 100%;
+    }
+
+    .projet-container-icone img {
+        z-index: 10;
     }
 }
 
 @media (max-width: 460px) {
     nav ul li a {
         font-size: 0.7em;
+    }
 
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        justify-content: space-around;
+        width: 100%;
+        margin: 0;
+    }
+
+    .container-card-titre {
+        clip-path: polygon(0 3%, 100% 0, 100% 100%, 49% 95%, 0 100%);
+
+    }
+
+    .titre {
+        h2 {
+            padding-top: 80px;
+            text-align: center;
+        }
+    }
+    .contact p{
+        margin: 0 20px;
+        text-align: center;
     }
 }

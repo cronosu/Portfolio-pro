@@ -14,7 +14,8 @@
     width: 80%;
     background-color: #000000;
     border-radius: 0 30px;
-
+max-height: 85%;
+overflow: hidden;
     header {
         position: relative;
     }
@@ -41,9 +42,7 @@
 
 }
 
-.onglet {
-    padding: 50px;
-}
+
 
 .w3-container> :not(:last-child) {
     margin-bottom: 20px;

@@ -5,7 +5,7 @@ function MonParcour() {
     return (
     <div className="presentation Apropos">
         <Titre
-        titre="Un peu plus sur moi"
+        titre="À propos"
         id="presentation"
       />
   <p >

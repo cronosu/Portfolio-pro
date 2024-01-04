@@ -58,7 +58,7 @@ function Projets() {
                 tech={projet.tech}
                 techUse={projet.techUse}
                 aPropos={projet.aPropos}
-
+                defis={projet.defis}
               />
             );
           }

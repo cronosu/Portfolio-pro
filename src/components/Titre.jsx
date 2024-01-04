@@ -1,13 +1,13 @@
 import React from "react";
-function Titre(props) {
+function Titre({id,titre}) {
   return (
     <div className="titre">
       <div className="trait"></div>
-      <h2 id={props.id}>{props.titre}</h2>
+      <h2 id={id}>{titre}</h2>
       <div className="trait"></div>
     </div>
 
   )
 }
 
-export default Titre
+export default Titre 

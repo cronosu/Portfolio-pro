@@ -42,6 +42,7 @@ function Projet(props) {
         tech={props.tech}
         techUse={props.techUse}
         aPropos={props.aPropos}
+        defis={props.defis}
         />
       ) : (
         null

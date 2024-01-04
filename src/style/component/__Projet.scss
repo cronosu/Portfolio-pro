@@ -47,28 +47,31 @@
         margin-left: 50px;
         top: -20px;
         right: 50vw;
-        box-shadow: rgb(13, 184, 44) 1px 1px 8px;
-        transition: all 0.3s ease-in-out;
-        animation: 1.5s ease-in-out 1s infinite shadowProjet;
+      
+        transition: all 0.3s ease-in;
+        animation: 5s ease-in  infinite shadowProjet;
         z-index: auto;
         object-fit: cover;
 
         &:hover {
             z-index: 500;
-            transform: rotate(0deg) scale(2);
+            transform: rotate(0deg) scale(2) translateX(-10px);
             box-shadow: none;
-            animation: none;
+           
 
         }
     }
 
     @keyframes shadowProjet {
+        0% {
+            box-shadow: rgb(13, 184, 44) 1px 1px 8px;
+        }
         25% {
             box-shadow: rgba(13, 184, 44) 1px 1px 10px;
         }
 
         50% {
-            box-shadow: rgb(13, 184, 44) 1px 1px 12px;
+            box-shadow: rgb(13, 184, 44) 1px 1px 18px;
         }
 
         75% {
@@ -103,7 +106,7 @@
     gap: 150px;
     background-color: rgb(23, 22, 22);
     margin-top: -250px;
-    padding-bottom: 350px;
+    padding-bottom: 250px;
 
     .active {
         opacity: 1;

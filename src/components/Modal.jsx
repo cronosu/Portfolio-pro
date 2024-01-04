@@ -42,6 +42,10 @@ function Modal(props) {
             className={`tablink w3-bar-item w3-button ${Onglet === 4 ? 'w3-red' : 'w3-grey'}`}
             onClick={() => openCity(4)}
           >Image</button>
+          <button
+            className={`tablink w3-bar-item w3-button ${Onglet === 5 ? 'w3-red' : 'w3-grey'}`}
+            onClick={() => openCity(5)}
+          >Defis</button>
         </div>
 
         {Onglet === 1 && (
@@ -110,6 +114,12 @@ function Modal(props) {
             </div>
           </div>
 
+        )}
+          {Onglet === 5 && (
+          <div className="w3-container city onglet ">
+
+            <p>{props.defis}</p><br />
+          </div>
         )}
 
         <div className="light-grey">

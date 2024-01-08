@@ -12,7 +12,8 @@ function Projets() {
   useEffect(() => {
     const fetchData = async () => {
       try { 
-        const response = await fetch('./work.json');
+        const response = await fetch('/work.json');
+
         if (!response.ok) {
           throw new Error('La requête a échoué');
         }

@@ -98,7 +98,8 @@
     display: flex;
     flex-direction: column;
     padding: 100px 20px 0;
-    clip-path: polygon(0 0, 50% 50px, 100% 0, 100% 100%, 0 100%);
+   // clip-path: polygon(0 0, 50% 50px, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(48.5% 5%, 100.2% 0%, 100.2% 95.5%, 0% 100.5%, 0% 0%);
     margin: -40px 0;
     padding-bottom: 200px;
     align-items: center;

@@ -9,6 +9,7 @@ import Formulaire from "./components/Formulaire"
 import MyTech from "./page/MyTech"
 import MonParcour from "./components/MonParcour"
 import Footer from "./components/Footer"
+import Formation from "./components/Formation"
 
 
 function App() {
@@ -23,7 +24,9 @@ function App() {
       </div>
       < MyTech />
       <MonParcour />
+
       <Projets />
+    <Formation/>
       <Formulaire />
       <Footer />
     </>

@@ -77,9 +77,7 @@
     }
 .w3-border-bottom{
     display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-
+    grid-template-columns: 1fr 1fr 1fr;
 button{
    border-radius: 0;
 }
@@ -163,4 +161,17 @@ button{
         margin: 0 20px;
         text-align: center;
     }
+    .images {
+        grid-template-columns: 1fr;
+    }
+.images-modal-visible  img{
+        width: 120%;
+        height:120%;
+        object-fit: contain;
+        margin: 30px auto;
+}
+.w3-modal-content {
+    margin: 80px auto;
+
+}
 }

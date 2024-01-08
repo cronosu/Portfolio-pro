@@ -8,7 +8,7 @@ function Text() {
       <h1>STOCLET Sylvain </h1><h2>
       <Typewriter 
 
-      wrapperClassName='Typewriter__wrapper'
+      wrapperClassName ='Typewriter__wrapper'
   options={{
     strings: [
       'Développeur Web ',

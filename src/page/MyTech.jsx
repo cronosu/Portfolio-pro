@@ -10,7 +10,7 @@ function Apropos() {
 
     <div  className="container-card-titre" >
       <Titre 
-        titre="Tech Utilisé"
+        titre="Tech Utilisés"
         id="Tech"
       />
       <div className="card-container">

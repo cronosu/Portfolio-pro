@@ -101,13 +101,12 @@
    // clip-path: polygon(0 0, 50% 50px, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(48.5% 5%, 100.2% 0%, 100.2% 95.5%, 0% 100.5%, 0% 0%);
     margin: -40px 0;
-    padding-bottom: 200px;
     align-items: center;
     justify-content: space-around;
     gap: 150px;
     background-color: rgb(23, 22, 22);
-    margin-top: -250px;
-    padding-bottom: 250px;
+    margin-top: -150px;
+    padding-bottom: 150px;
 
     .active {
         opacity: 1;

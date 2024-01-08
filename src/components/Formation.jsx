@@ -16,6 +16,8 @@ const Formation = () => {
                         </a>
                         <div className='formation-content-p'>
                             <a href='https://openclassrooms.com/'>OPENCLASSROOMS</a>
+                            <p>Formation : Développeur Web</p>
+                            
                             <p>2023-2024 : Diplôme de niveau 5 (bac +2)</p>
 
                         </div>

@@ -16,7 +16,7 @@ J'ai obtenu mon diplôme du Baccalauréat professionnel de commerce en 2007.<br/
 
 Au cours de mes études, j'ai eu l'opportunité de m'impliquer dans activité commerciale local, ce qui m'a permis de développer des compétences en relationnel client.<br/><br/>
 
-Après mes études, j'ai eu l'occasion de travailler chez la grande entreprise McDonald's <img className="Mcdo-icone" src="./mcdonalds.png"></img> en tant que "employé polyvalent" puis "chef d'équipe" .<br/><br/>
+Après mes études, j'ai eu l'occasion de travailler chez la grande entreprise McDonald's <img alt="icon-mcdonald's" className="Mcdo-icone" src="./mcdonalds.png"></img> en tant que "employé polyvalent" puis "chef d'équipe" .<br/><br/>
 
 Cette expérience m'a permis d'acquérir une expertise en gestion du personnel et de développer des compétences telles que la patience ou le travail en équipe .<br/><br/>
 

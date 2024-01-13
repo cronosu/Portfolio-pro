@@ -4,7 +4,7 @@ function Avatar() {
 
   return (
     <>
-      <img className="avatar" src="/Avatar.png" />
+      <img alt="avatar" className="avatar" src="/Avatar.png" />
     </>
   )
 }

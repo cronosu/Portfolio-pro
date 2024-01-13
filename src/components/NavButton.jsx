@@ -5,9 +5,11 @@ import React from "react"
 function NavButton(props) {
 
   return (
-<a href={props.id}>
-   {props.content}
-</a>
+    <a
+      aria-label={props.label}
+      href={props.id}>
+      {props.content}
+    </a>
 
   )
 }

@@ -12,14 +12,19 @@ function Projets() {
   useEffect(() => {
     const fetchData = async () => {
       try { 
-        const response = await fetch('/work.json');
+        const response = await fetch('/work.json', {
+          headers: {
+            'Accept-Encoding': 'gzip, compress, br',
+          
+          },
+        });
 
         if (!response.ok) {
           throw new Error('La requête a échoué');
         }
         const data = await response.json();
         setWork(data)
-        console.log(data);
+      
       } catch (error) {
         console.error('Une erreur s\'est produite :', error.message);
       }

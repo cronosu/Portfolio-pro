@@ -10,8 +10,11 @@
     clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
     margin-top: -230px;
     padding: 500px 0;
-p{
-    user-select:contain;}
+
+    p {
+        user-select:none;
+    }
+
     .formulaire-label-input {
         display: flex;
         flex-direction: column;
@@ -47,7 +50,7 @@ p{
 
     form {
         width: 90%;
-        padding: 50px 0 0 ;
+        padding: 50px 0 0;
         max-width: 500px;
         display: flex;
         gap: 25px;
@@ -56,7 +59,7 @@ p{
 
         #text {
 
-         
+
             max-width: 750px;
             height: 100px;
             max-height: 300px;
@@ -83,13 +86,15 @@ p{
 
 .message {
     letter-spacing: 10px;
-    
 
-    
+
+
 }
+
 .validation-form {
     color: green;
 }
-.error-form{
+
+.error-form {
     color: red;
 }

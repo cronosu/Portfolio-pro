@@ -33,6 +33,7 @@ function Formulaire() {
             form.current,
             'Yat0-JspNkwQo-31D')
             .then((result) => {
+              form.current.reset();
               setMessage("validation-form");
               console.log(result.text);
             }, (error) => {

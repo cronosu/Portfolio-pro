@@ -15,7 +15,6 @@ function Projets() {
         const response = await fetch('/work.json', {
           headers: {
             'Accept-Encoding': 'gzip, compress, br',
-          
           },
         });
 
